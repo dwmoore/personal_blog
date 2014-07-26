@@ -14,6 +14,7 @@ gem 'devise'
 gem 'pg'
 gem 'pundit'
 gem 'simple_form'
+gem 'kaminari'
 group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
