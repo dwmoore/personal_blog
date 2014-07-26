@@ -1,8 +1,19 @@
-<div class="container">
-  <div class="row">
-    <h3>Users</h3>
-    <div class="column">
-      Posts go here...
-    </div>
+<div class="col-sm-8 blog-main">
+  <div class="blog-post">
+    <% @posts.each do |post|%>
+      <h2 class="blog-post-title"><%= post.title %></h2>
+      <p class="blog-post-meta"><%= post.created_at.to_date.to_formatted_s :long_ordinal %> by Dave Moore</p>
+      <hr>
+      <%= raw post.body %>
+    <% end %>
+    <hr>
+    <!-- kaminari pagination -->
+    <div class="kaminari-newer"><%= link_to_previous_page @posts, 'Next Post' %></div>
+    <div class="kaminari-older"><%= link_to_next_page @posts, 'Previous Post' %></div>
+  </div>
+</div>
+<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+  <div class="sidebar-module sidebat-module-inset">
+    <h4>About</h4>
   </div>
 </div>

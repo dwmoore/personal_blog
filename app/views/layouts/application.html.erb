@@ -12,9 +12,27 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
-    <main role="main">
+    <!-- <main role="main"> -->
        <%= render 'layouts/messages' %>
-       <%= yield %>
-    </main>
+       <div class="container">
+        <div class="blog-header">
+          <h1 class="blog-title">SuperLeet</h1>
+          <p class="lead blog-description">The development blog that's focused on, structured around, and always in... development.</p>
+        </div>
+          <div class="row">
+            <%= yield %>
+          </div>
+       </div>
+    <!-- </main> -->
+    <footer>
+      <div class="blog-footer">
+        <p><a href="#">SuperLeet</a> is built with <a href="https:rubyonrails.org">Ruby on Rails</a> by <a href="https://twitter.com/davemoorestudio">@Dave Moore</a><br />
+        Frontend framework by <a href="http://getbootstrap.com">Bootstrap</a><br /> 
+        CSS tweaks based on customizations by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        <p>
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
