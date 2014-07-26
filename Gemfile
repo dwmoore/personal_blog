@@ -15,17 +15,22 @@ gem 'pg'
 gem 'pundit'
 gem 'simple_form'
 gem 'kaminari'
+gem 'tinymce-rails'
+
 group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
 end
+
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
 end
+
 group :production do
   gem 'thin'
 end
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
