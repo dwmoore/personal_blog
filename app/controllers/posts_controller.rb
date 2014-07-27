@@ -12,7 +12,7 @@ class PostsController < ApplicationController
 	def create
 		@post = current_user.posts.new( post_params )
 		if @post.save
-  		flash[:success] = "Post added successfully."
+  		flash[:notice] = "Post added successfully."
   		redirect_to root_path
   	else
   		flash[:error] = "There was a problem saving the post."
@@ -27,7 +27,7 @@ class PostsController < ApplicationController
 	def update
 		@post = current_user.post.find(params[:id])
     if @post.update_attributes( post_params )
-      flash[:success] = "Saved post updates."
+      flash[:notice] = "Saved post updates."
       redirect_to root_path
     else
       flash[:error] = "The post could not be saved."
@@ -38,7 +38,7 @@ class PostsController < ApplicationController
 	def destroy
 		 @post = current_user.post.find(params[:id])
     if @post.destroy
-      flash[:success] = "The post was deleted."
+      flash[:notice] = "The post was deleted."
     else
       flash[:error] = "The post could not be deleted."
     end
