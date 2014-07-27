@@ -5,6 +5,7 @@
       <p class="blog-post-meta"><%= post.created_at.to_date.to_formatted_s :long_ordinal %> by Dave Moore</p>
       <hr>
       <%= raw post.body %>
+      <p class="blog-post-meta"><%= link_to("Discuss This Post", post_path(post)) %></p>
     <% end %>
     <hr>
     <!-- kaminari pagination -->
