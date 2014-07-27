@@ -26,6 +26,7 @@ Other Major Components
 - ***TinyMCE-Rails*** for post markdown.
 - ***Kaminari*** for pagination.
 - ***Simple Form*** for form management.
+- ***Disqus*** for discussions.
 
 Issues
 -------------
@@ -34,10 +35,10 @@ Some issues of note I encountered while working on this project:
 
 There is a bug in CreateAdminService. Even though everything looks like it should work, I could not get the environment varaiables to register in the class but they were working fine everywhere else.  The fix: added placeholder values for the variables and then used the live site to update the user account with actual data.
 
-
-
 Credits
 -------
+
+CSS tweaks based on customizations by [@mdo](https://twitter.com/mdo)
 
 License
 -------
