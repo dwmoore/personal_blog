@@ -29,7 +29,7 @@ class PostsController < ApplicationController
 	end
 
 	def update
-		@post = current_user.post.find(params[:id])
+		@post = current_user.posts.find(params[:id])
     if @post.update_attributes( post_params )
       flash[:notice] = "Saved post updates."
       redirect_to root_path
