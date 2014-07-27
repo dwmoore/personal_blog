@@ -1,0 +1,13 @@
+<div class="col-sm-12 blog-main">
+	<div class="blog-post">
+		<h2 class="blog-post-title">Create a New Post</h2>
+		<%= tinymce %>
+		<%= simple_form_for @post do |f| %>
+			<%= f.input :title, label: 'Post Title', input_html: { size: 85 } %>
+        <br />
+			  <%= f.input :body, label: 'Post Body', input_html: { class: 'tinymce', rows: 10, cols: 120 } %>
+        <br />
+			  <%= f.button :submit %>
+    <% end %>
+	</div>
+</div>
