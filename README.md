@@ -1,45 +1,40 @@
-Personal Blog
-================
+SuperLeet - My Personal Blog Project 
+====================================  
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+This project is the first incantation of my personal blog as well as my entry into Team Treehouse's forum contest for builing your own blog.  You can view the live site [running on Heroku](http://serene-tor-2991.herokuapp.com/).
 
-Rails Composer is open source and supported by subscribers. Please join RailsApps to support development of Rails Composer.
+I've been wanting to build my own blog from scratch for a while now. Thanks to Team Treehouse and Jason Seifer I've finally made time to make it happen.
 
-Problems? Issues?
------------
+Overview
+--------
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
+The app is built on [Ruby](http://ruby-lang.org) 2.1.2 and [Rails](http://rubyonrails.org) 4.1.4 for the backend and [Bootstrap](http://http://getbootstrap.com/) front end.
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
-
-If the application doesn’t work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
-
-Ruby on Rails
+The Stack
 -------------
 
-This application requires:
+- ***Ruby 2.1.2***
+- ***Rails 4.1.4***
+- ***PostgreSQL***
+- ***Heroku running a single web dyno***
+- ***Bootstrap 3.2***
 
-- Ruby 2.1.2
-- Rails 4.1.4
+Other Major Components
+----------------------
 
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
+- ***Devise and Pundit*** for authorization. Not making use of Pundit really at present but put it in for future comment system.
+- ***TinyMCE-Rails*** for post markdown.
+- ***Kaminari*** for pagination.
+- ***Simple Form*** for form management.
 
 Issues
 -------------
 
-Similar Projects
-----------------
+Some issues of note I encountered while working on this project:
 
-Contributing
-------------
+There is a bug in CreateAdminService. Even though everything looks like it should work, I could not get the environment varaiables to register in the class but they were working fine everywhere else.  The fix: added placeholder values for the variables and then used the live site to update the user account with actual data.
+
+
 
 Credits
 -------
