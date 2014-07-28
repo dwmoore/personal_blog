@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 	end
 
 	 def show
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 
 	def new
@@ -25,11 +25,11 @@ class PostsController < ApplicationController
 	end
 
 	def edit
-		@post = current_user.posts.find(params[:id])
+		@post = current_user.posts.friendly.find(params[:id])
 	end
 
 	def update
-		@post = current_user.posts.find(params[:id])
+		@post = current_user.posts.friendly.find(params[:id])
     if @post.update_attributes( post_params )
       flash[:notice] = "Saved post updates."
       redirect_to root_path
@@ -40,7 +40,7 @@ class PostsController < ApplicationController
 	end
 
 	def destroy
-		 @post = current_user.post.find(params[:id])
+		 @post = current_user.post.friendly.find(params[:id])
     if @post.destroy
       flash[:notice] = "The post was deleted."
     else
