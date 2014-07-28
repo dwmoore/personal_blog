@@ -28,6 +28,14 @@ Other Major Components
 - ***Simple Form*** for form management.
 - ***Disqus*** for discussions.
 
+Future Plans
+------------
+
+- Add Paperclip for post images
+- Add code highlighting (Probably by moving away from TinyMCE and toward a combination of Redcarpet, Highlight, and MarkItUp)
+- Add mailing list form
+- Make URLs more SEO friendly  
+
 Issues
 -------------
 
@@ -39,6 +47,3 @@ Credits
 -------
 
 CSS tweaks based on customizations by [@mdo](https://twitter.com/mdo)
-
-License
--------

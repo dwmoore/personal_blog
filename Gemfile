@@ -16,6 +16,7 @@ gem 'pundit'
 gem 'simple_form'
 gem 'kaminari'
 gem 'tinymce-rails'
+gem 'font-awesome-rails'
 
 group :development do
   gem 'quiet_assets'
