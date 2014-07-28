@@ -25,6 +25,7 @@ Other Major Components
 - ***Devise and Pundit*** for authorization. Not making use of Pundit really at present but put it in for future comment system.
 - ***TinyMCE-Rails*** for post markdown.
 - ***Kaminari*** for pagination.
+- ***Friendly Id*** for SEO friendly post slugs.
 - ***Simple Form*** for form management.
 - ***Disqus*** for discussions.
 
@@ -34,7 +35,7 @@ Future Plans
 - Add Paperclip for post images
 - Add code highlighting (Probably by moving away from TinyMCE and toward a combination of Redcarpet, Highlight, and MarkItUp)
 - Add mailing list form
-- Make URLs more SEO friendly  
+- Make homepage URLs more SEO friendly  
 
 Issues
 -------------
