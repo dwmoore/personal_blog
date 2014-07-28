@@ -48,3 +48,4 @@ Credits
 -------
 
 CSS tweaks based on customizations by [@mdo](https://twitter.com/mdo)
+Thanks to [Daniel Kehoe](https://tutorials.railsapps.org) for providing the awesome Rails Composer to make app boilerplate a cinch! 
