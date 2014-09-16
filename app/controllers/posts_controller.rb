@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-	before_filter :authenticate_user!, except: [:index]
+	before_filter :authenticate_user!, except: [:index, :show]
 
 	def index
 		@posts = Post.order(created_at: :desc).page( params[:page] )
@@ -15,6 +15,7 @@ class PostsController < ApplicationController
 
 	def create
 		@post = current_user.posts.new( post_params )
+		authorize User
 		if @post.save
   		flash[:notice] = "Post added successfully."
   		redirect_to root_path
